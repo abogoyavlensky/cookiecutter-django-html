@@ -3,10 +3,12 @@
 <html>
 <head>
   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-  <title>{{cookiecutter.project_name}}</title>
+  <title>{% block content %}Main page{% endblock content %}</title>
 </head>
 <body>
   <h1>Main page</h1>
+
+  {% block content %}
+  {% endblock content %}
 </body>
-</html>
-{% endraw %}
+</html>{% endraw %}
