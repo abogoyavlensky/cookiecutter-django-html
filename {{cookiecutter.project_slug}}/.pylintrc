@@ -1,0 +1,7 @@
+[MASTER]
+init-hook='import sys; sys.path.append("{{cookiecutter.project_slug}}")'
+ignore=migrations,.git,tests
+disable=W0612,too-few-public-methods,too-many-ancestors,locally-disabled,fixme,no-member,cyclic-import,invalid-name,duplicate-code,ungrouped-imports,invalid-str-returned
+max-line-length=79
+no-docstring-rgx=__.*__|Meta|test_.*
+reports=no
